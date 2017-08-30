@@ -13,7 +13,7 @@
 
 function takeANumber(line, name) {
   line.push(name);
-  var position = line.length - 1; 
+  var position = line.length; 
   return position;
 }
 
