@@ -34,11 +34,12 @@ var result = "The line is currently: "
       } else {
         result += (i + 1) + ". " + line[i];
       }
-      
     }
     return result + "."
   }
-  
 
-  else return "The line is currently empty."
+
+  else {
+    return "The line is currently empty."
+  } 
 }
