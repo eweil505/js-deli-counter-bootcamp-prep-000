@@ -13,7 +13,7 @@
 
 function takeANumber(line, name) {
   line.push(name);
-  var position = line.length; 
+  var position = line.length;
   return position;
 }
 
@@ -26,7 +26,19 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  return "The line is currently: "
+var result = "The line is currently: "
+  if (line.length > 0) {
+    for (var i = 0; i < line.length; i++) {
+      if (i < line.length - 1) {
+        result += (i + 1) + ". " + line[i] + ", ";
+      } else {
+        result += (i + 1) + ". " + line[i];
+      }
+      
+    }
+    return result + "."
+  }
+  
 
   else return "The line is currently empty."
 }
