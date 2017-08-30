@@ -12,7 +12,8 @@
 // If there is nobody in line, it should return `"The line is currently empty."`
 
 function takeANumber(line, name) {
-  
+  line.push(name);
+  var position = line.length - 1; 
   return position;
 }
 
