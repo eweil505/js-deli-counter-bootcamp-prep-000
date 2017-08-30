@@ -12,11 +12,12 @@
 // If there is nobody in line, it should return `"The line is currently empty."`
 
 function takeANumber(line, name) {
+  
   return position;
 }
 
 function nowServing(line) {
-  
+
 }
 
 function currentLine(line) {
