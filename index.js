@@ -14,7 +14,7 @@
 function takeANumber(line, name) {
   line.push(name);
   var position = line.length;
-  return position;
+  return `Welcome, ${name}. You are number ${position} in line.`;
 }
 
 function nowServing(line) {
@@ -35,7 +35,7 @@ var result = "The line is currently: "
         result += (i + 1) + ". " + line[i];
       }
     }
-    return result + "."
+    return result;
   }
 
 
